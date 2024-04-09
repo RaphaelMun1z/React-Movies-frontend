@@ -1,0 +1,94 @@
+header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 50%;
+    background: rgb(58, 23, 43);
+    background: -moz-linear-gradient(90deg, rgba(58, 23, 43, 1) 9%, rgba(17, 26, 61, 1) 92%);
+    background: -webkit-linear-gradient(90deg, rgba(58, 23, 43, 1) 9%, rgba(17, 26, 61, 1) 92%);
+    background: linear-gradient(90deg, rgba(58, 23, 43, 1) 9%, rgba(17, 26, 61, 1) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a172b", endColorstr="#111a3d", GradientType=1);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-radius: 20px;
+    margin: 1em auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 999;
+
+    .nameContainer,
+    nav {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nameContainer {
+        h1 {
+            a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 25pt;
+                color: #fff;
+                text-decoration: none;
+                outline: none;
+                gap: 5px;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        form {
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+
+            input {
+                border: none;
+                background-color: rgb(17, 26, 61);
+                border: 1px solid #fff;
+                border-right: none;
+                border-radius: 10px 0 0 10px;
+                padding: .5em;
+                font-size: 12pt;
+                color: #fff;
+            }
+
+            button {
+                border: none;
+                background-color: rgb(17, 26, 61);
+                border-radius: 0 10px 10px 0;
+                padding: 1em;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #fff;
+                border-left: none;
+                cursor: pointer;
+
+                svg {
+                    font-size: 20pt;
+                    color: #fff;
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1em;
+    }
+}

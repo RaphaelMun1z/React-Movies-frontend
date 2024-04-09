@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Georama", sans-serif;
+}
+
+body {
+  background-color: #11283D;
+}
+
+.appContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.moviesContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  height: fit-content;
+  gap: 1em 1%;
+
+  .searchHeader {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+      font-size: 20pt;
+      color: #fff;
+
+      span {
+        color: #0094f6;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .moviesContainer {
+    width: 100%;
+    margin: inherit;
+  }
+
+  .appContainer {
+    padding: 0 1em;
+  }
+}
