@@ -10,7 +10,7 @@
 ##
 
 ### 💡 Proposta
-<p>&emsp;...</p>
+<p>&emsp;A motivação para criar o 'Movies' surgiu do meu interesse pessoal por cinema e do desejo de construir uma plataforma interativa que aproveitasse uma API robusta como a do TMDB (The Movie Database). Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em integração de APIs, gerenciamento de estados no React e criação de interfaces intuitivas.</p>
 
 ##
 
